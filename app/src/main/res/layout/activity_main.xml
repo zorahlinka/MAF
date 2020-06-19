@@ -6,13 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/TW1" />
+
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:onClick="kiirJo"
+                android:text="@string/B1" />
+
+            <Button
+                android:id="@+id/Button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:onClick="kiirSemleges"
+                android:text="@string/B2" />
+
+            <Button
+                android:id="@+id/Button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:onClick="kiirRossz"
+                android:shadowColor="#FFFFFF"
+                android:text="@string/Button3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

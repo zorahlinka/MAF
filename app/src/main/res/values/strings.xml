@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">vizsga</string>
+    <string name="TW1">Milyen a kedved?</string>
+    <string name="B1">Jó</string>
+    <string name="B2">semleges</string>
+    <string name="Button3">rossz</string>
+
+    <string-array name="spinner_array">
+        <item>Jó</item>
+        <item>Semleges</item>
+        <item>Rossz</item>
+    </string-array>
 </resources>
